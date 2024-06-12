@@ -113,6 +113,7 @@
             button4.Text = "Producción";
             button4.TextAlign = ContentAlignment.MiddleRight;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
