@@ -157,7 +157,7 @@ namespace cowhub
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.arduino();
+            tabControl1.SelectedIndex = 1;
         }
 
         private void tabPage4_Click(object sender, EventArgs e)
@@ -187,12 +187,19 @@ namespace cowhub
 
         private void button2_Click(object sender, EventArgs e)
         {
-            tabControl1.TabIndex = 1;
+            tabControl1.SelectedIndex = 0;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            tabControl1.TabIndex = 2;
+            tabControl1.SelectedIndex = 2;
+            LoadCows();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 3;
+            arduino();
         }
     }
 }
